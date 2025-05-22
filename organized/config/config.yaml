@@ -1,0 +1,77 @@
+# config/config.yaml
+
+project:
+  name: "Young_Farmer_Criticizes_Temple_Officials_and_executed"
+  output_dir: "generated_documents"
+  log_dir: "logs"
+  default_llm: "ollama"
+
+llm:
+  api_urls:
+    openai: "https://api.openai.com/v1/chat/completions"
+    groq: "https://api.groq.com/v1/completions"
+    ollama: "http://localhost:11434/api/generate"
+  model_names:
+    openai: "gpt-4o-mini"
+    groq: "mixtral-8x7b-32768"
+    ollama: "llama3.2"
+  api_keys:
+    openai: "${OPENAI_API_KEY}"
+    groq: "${GROQ_API_KEY}"
+
+token_limits:
+  original_tale: 15000
+  supporting_document:
+    sentence: 75
+    short: 750
+    medium: 1500
+    long: 7500
+    multi_volume_min: 15000
+    multi_volume_max: 32000
+  final_narrative: 15000
+
+generation:
+  num_supporting_docs: 10
+  num_distillers: 3
+  max_retries: 3
+  min_acceptable_length: 10
+  loss_percent_char: 0.30
+  loss_percent_docs: 0.40
+
+document_types:
+  - letter
+  - receipt
+  - police report
+  - state testimony
+  - scorecard
+  - poem
+  - autobiography
+  - biography
+  - autograph
+  - contract
+  - invoice
+  - testimonial
+  - journal entry
+  - diary
+  - memorandum
+  - protocol
+  - decree
+  - manifesto
+  - speech
+  - report
+  - essay
+  - research paper
+  - field notes
+  - interview transcript
+  - code of laws
+  - prophecy
+  - legend
+  - myth
+  - folktale
+  - song lyrics
+  - play script
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(levelname)s - %(message)s"
+  datefmt: "%Y-%m-%d %H:%M:%S"

@@ -1,0 +1,114 @@
+ollama:
+  api_url: "http://localhost:11434/api/generate"
+  model_name: "gemma2:9b"  # Replace with your actual model name in Ollama
+  timeout: 120  # seconds
+
+execution:
+  max_iterations: 10
+  stop_term: "END_OF_PATH"
+  output_dir: "run_outputs"
+
+reasoning_branches:
+  deductive_reasoning:
+    prompt: |
+      <Prompt>
+          <Instruction>
+              Use deductive reasoning to solve the following problem. 
+              Provide each iteration's response within <Iteration></Iteration> tags.
+              Include a <StopTerm>END_OF_PATH</StopTerm> tag when the reasoning is complete.
+          </Instruction>
+          <Problem>{problem}</Problem>
+          {previous_iterations}
+      </Prompt>
+    output_format: "xml"
+
+  inductive_reasoning:
+    prompt: |
+      <Prompt>
+          <Instruction>
+              Apply inductive reasoning to approach the following problem. 
+              Provide each iteration's response within <Iteration></Iteration> tags.
+              Include a <StopTerm>END_OF_PATH</StopTerm> tag when the reasoning is complete.
+          </Instruction>
+          <Problem>{problem}</Problem>
+          {previous_iterations}
+      </Prompt>
+    output_format: "xml"
+
+  analogical_reasoning:
+    prompt: |
+      <Prompt>
+          <Instruction>
+              Use analogical reasoning to address the following problem. 
+              Provide each iteration's response within <Iteration></Iteration> tags.
+              Include a <StopTerm>END_OF_PATH</StopTerm> tag when the reasoning is complete.
+          </Instruction>
+          <Problem>{problem}</Problem>
+          {previous_iterations}
+      </Prompt>
+    output_format: "xml"
+
+  abductive_reasoning:
+    prompt: |
+      <Prompt>
+          <Instruction>
+              Employ abductive reasoning to infer a solution for the following problem. 
+              Provide each iteration's response within <Iteration></Iteration> tags.
+              Include a <StopTerm>END_OF_PATH</StopTerm> tag when the reasoning is complete.
+          </Instruction>
+          <Problem>{problem}</Problem>
+          {previous_iterations}
+      </Prompt>
+    output_format: "xml"
+
+  causal_reasoning:
+    prompt: |
+      <Prompt>
+          <Instruction>
+              Utilize causal reasoning to determine the solution to the following problem. 
+              Provide each iteration's response within <Iteration></Iteration> tags.
+              Include a <StopTerm>END_OF_PATH</StopTerm> tag when the reasoning is complete.
+          </Instruction>
+          <Problem>{problem}</Problem>
+          {previous_iterations}
+      </Prompt>
+    output_format: "xml"
+
+  critical_reasoning:
+    prompt: |
+      <Prompt>
+          <Instruction>
+              Apply critical reasoning to analyze and solve the following problem. 
+              Provide each iteration's response within <Iteration></Iteration> tags.
+              Include a <StopTerm>END_OF_PATH</StopTerm> tag when the reasoning is complete.
+          </Instruction>
+          <Problem>{problem}</Problem>
+          {previous_iterations}
+      </Prompt>
+    output_format: "xml"
+
+  creative_reasoning:
+    prompt: |
+      <Prompt>
+          <Instruction>
+              Use creative reasoning to devise a solution for the following problem. 
+              Provide each iteration's response within <Iteration></Iteration> tags.
+              Include a <StopTerm>END_OF_PATH</StopTerm> tag when the reasoning is complete.
+          </Instruction>
+          <Problem>{problem}</Problem>
+          {previous_iterations}
+      </Prompt>
+    output_format: "xml"
+
+  systems_reasoning:
+    prompt: |
+      <Prompt>
+          <Instruction>
+              Employ systems reasoning to understand and solve the following problem. 
+              Provide each iteration's response within <Iteration></Iteration> tags.
+              Include a <StopTerm>END_OF_PATH</StopTerm> tag when the reasoning is complete.
+          </Instruction>
+          <Problem>{problem}</Problem>
+          {previous_iterations}
+      </Prompt>
+    output_format: "xml"

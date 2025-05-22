@@ -1,0 +1,65 @@
+Here is a flowchart document for episode 1 of our podcast:
+
+**Episode 1 Flowchart**
+
+```
+                                      +-------------------+
+                                      |      Episode 1    |
+                                      |  Introduction to   |
+                                      |  Detective Reed    |
+                                      +-------------------+
+                                             |
+                                             |
+                                             v
+                                      +-------------------+
+                                      |  Scene 1: The     |
+                                      |  Mysterious Message|
+                                      |  (Alex receives a  |
+                                      |   mysterious message)|
+                                      +-------------------+
+                                             |
+                                             |
+                                             v
+                                      +-------------------+       +-------------------+
+                                      |  Character Poses  |       |  Setting and Environment|
+                                      |  and Expressions:  |       |                     |
+                                      |  Alex: Concerned,  |       |  Alex's apartment:   |
+                                      |  confused         |       |  Modern, tech-savvy  |
+                                      |  Detective Reed:  |       |  space with a desk    |
+                                      |  Serious, intrigued|       |  and computer.        |
+                                      +-------------------+       +-------------------+
+                                             |                                             |
+                                             v                                             v
+                                      +-------------------+       +-------------------+
+                                      |  Scene 2:          |       |  Scene 3: The     |
+                                      |  Introduction to  |       |  Investigation    |
+                                      |  Detective Reed   |       |  Heats Up (group  |
+                                      |                    |       |  discussion)         |
+                                      +-------------------+       +-------------------+
+                                             |                                             |
+                                             v                                             v
+                                      +-------------------+       +-------------------+
+                                      |  Character Poses  |       |  Setting and Environment|
+                                      |  and Expressions:  |       |                     |
+                                      |  Alex: Focused,    |       |  Kitchen table:     |
+                                      |  determined      |       |  Modern, clean space  |
+                                      |  Detective Reed:  |       |  with a laptop open.|
+                                      |  Serious, analytical|       +-------------------+
+                                             |                                             |
+                                             v                                             |
+                                      +-------------------+       +-------------------+
+                                      |  Scene 4:         |       |  The Investigation|
+                                      |  Conclusion      |       |  Wraps Up (clues  |
+                                      |                   |       |  are revealed, and    |
+                                      |                   |       |  the group discusses)|
+                                      +-------------------+       +-------------------+
+```
+
+**Flowchart Legend**
+
+* `+-------------------+`: A new scene begins.
+* `|` : The flowchart splits into multiple branches.
+* `v` : The flowchart connects to a previous branch.
+* Character Poses and Expressions: The character's personality traits are listed.
+
+This flowchart outlines the episode 1 script, showing how each scene flows into the next.

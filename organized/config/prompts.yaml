@@ -1,0 +1,37 @@
+# config/prompts.yaml
+
+initial_tale:
+  description:
+    - "You are a renowned historian tasked with writing an epic tale about the legendary {PROJECT_NAME}."
+    - "Compose a detailed and engaging narrative that outlines {PROJECT_NAME} and its enduring legacy."
+    - "Ensure the story is rich with cultural context, vivid descriptions, and maintains an ancient storytelling style."
+    - "Incorporate the following user-provided description into the tale: {user_prose}"
+
+supporting_document:
+  name_generation:
+    - "Example: Aelon's Decree"
+    - "Generate ONLY ONE concise, unique name (a single noun or short phrase) for a {doc_type} related to '{PROJECT_NAME}'."
+    - "The name should be a single line without any numbering, bullets, or additional explanations."
+    - "Do not include phrases like 'Here are some suggestions:' or similar introductions."
+  description_generation:
+    - "Provide a detailed description (at least a paragraph) for a {doc_type} titled '{name}' related to '{PROJECT_NAME}'."
+  content_generation:
+    - "Based on the following concept:"
+    - "Name: {name}"
+    - "Type: {doc_type}"
+    - "Description: {description}"
+    - "Write a detailed {size_category} {doc_type}."
+
+final_narrative:
+  compilation:
+    - "Using the following materials:"
+    - "Initial Tale:"
+    - "{tale}"
+    - "Supporting Documents:"
+    - "{supporting_docs}"
+    - "Distilled Documents:"
+    - "{distilled_docs}"
+    - "Compile a comprehensive and coherent summary narrative about {PROJECT_NAME} after the distillation of time."
+    - "Incorporate the influence of the initial tale, supporting documents, and the effects of historical distillation on the existing lore."
+    - "Ensure the final narrative is an attempt to retell the original using the surviving documents rich in detail, up to 10,000 tokens."
+    - "Generated on: {generation_time}"
