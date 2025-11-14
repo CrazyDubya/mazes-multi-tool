@@ -464,7 +464,7 @@ mazes-multi-tool/
 ## IMMEDIATE ACTION ITEMS (Next 30 Days)
 
 ### Week 1-2: Critical Fixes
-- [ ] Create proper requirements.txt with all dependencies
+- [x] Create proper requirements.txt with all dependencies
 - [ ] Remove or properly isolate FFmpeg source code
 - [ ] Add MIT or Apache 2.0 license
 - [ ] Create basic test suite (start with maze algorithms)
