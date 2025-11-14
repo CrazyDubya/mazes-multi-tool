@@ -1,0 +1,104 @@
+# Mazes Multi-Tool Python Project - Dependencies
+# Generated: 2025-11-14
+
+# ==========================================
+# Core Python Dependencies
+# ==========================================
+
+# AI & LLM Integration
+openai>=1.3.0              # OpenAI API client (async support)
+aiohttp>=3.9.0             # Async HTTP client for API calls
+aiofiles>=23.2.0           # Async file operations
+
+# GUI & Visualization
+PySide6>=6.6.0             # Qt for Python (GUI framework)
+matplotlib>=3.8.0          # Plotting and maze visualization
+numpy>=1.24.0              # Numerical computing
+
+# Data Processing & Parsing
+beautifulsoup4>=4.12.0     # HTML/XML parsing
+lxml>=4.9.0                # XML processing (faster parser for BS4)
+jsonschema>=4.19.0         # JSON schema validation
+PyYAML>=6.0                # YAML configuration file parsing
+
+# Web Framework (for GPT search engine)
+# Note: GPT search uses Node.js/Express, not Python web framework
+# Include if migrating to Python:
+# fastapi>=0.104.0         # Modern Python web framework
+# uvicorn>=0.24.0          # ASGI server
+
+# Computer Vision & AI Models
+opencv-python>=4.8.0       # OpenCV for image/video processing
+torch>=2.1.0               # PyTorch for SAM2 and other models
+torchvision>=0.16.0        # PyTorch vision utilities
+
+# CAD Tools
+cadquery>=2.4.0            # 3D CAD modeling
+# pythonOCC-core>=7.7.0    # Alternative CAD library (uncomment if needed)
+
+# Development & Code Quality
+pytest>=7.4.0              # Testing framework
+pytest-asyncio>=0.21.0     # Async test support
+pytest-cov>=4.1.0          # Code coverage
+black>=23.11.0             # Code formatter
+mypy>=1.7.0                # Static type checker
+ruff>=0.1.0                # Fast Python linter
+bandit>=1.7.0              # Security vulnerability scanner
+
+# Utilities
+rich>=13.7.0               # Rich terminal output and progress bars
+click>=8.1.0               # CLI creation (if needed for tools)
+python-dotenv>=1.0.0       # Environment variable management
+requests>=2.31.0           # HTTP library (sync operations)
+
+# Optional: Jupyter & Data Science
+# Uncomment if actively using notebooks
+# jupyter>=1.0.0
+# pandas>=2.1.0
+# scikit-learn>=1.3.0
+# seaborn>=0.13.0
+
+# ==========================================
+# Version Notes
+# ==========================================
+# - All versions use '>=' to allow updates while maintaining compatibility
+# - Tested with Python 3.10+
+# - Some dependencies (FFmpeg, Ollama) must be installed separately
+# - Node.js dependencies for GPT search are in gpt-search-engine/package.json
+
+# ==========================================
+# Installation Instructions
+# ==========================================
+# 1. Create virtual environment:
+#    python -m venv .venv
+#
+# 2. Activate virtual environment:
+#    - Linux/Mac: source .venv/bin/activate
+#    - Windows: .venv\Scripts\activate
+#
+# 3. Install dependencies:
+#    pip install -r requirements.txt
+#
+# 4. Install system dependencies (if needed):
+#    - FFmpeg: https://ffmpeg.org/download.html
+#    - Ollama: https://ollama.ai/download
+#
+# 5. Set environment variables:
+#    export OPENAI_API_KEY="your-key-here"
+#    export GROQ_API_KEY="your-key-here"
+#    # Or create a .env file in project root
+
+# ==========================================
+# Platform-Specific Notes
+# ==========================================
+# macOS:
+#   - May need: brew install cairo
+#   - For CAD: brew install opencascade
+#
+# Linux:
+#   - May need: apt-get install python3-tk
+#   - For PySide6: apt-get install libgl1-mesa-glx
+#
+# Windows:
+#   - Ensure Visual C++ Build Tools installed
+#   - PyTorch: see https://pytorch.org for CUDA versions
